@@ -40,7 +40,7 @@ const PreviewComponent: FC<PreviewModalProps> = ({ product, isModalOpen, setIsMo
           <h3 className={styles.imageLabel}>MORE IMAGES</h3>
           <div className={styles.imageWrapper}>
             {product &&
-              product.images.map((image: string, index: number) => (
+              product.images.slice(0, 4).map((image: string, index: number) => (
                 <Fragment key={index}>
                   <ImageLoader src={image} alt={`Product image ${index + 1}`} type={'modal'} />
                 </Fragment>
