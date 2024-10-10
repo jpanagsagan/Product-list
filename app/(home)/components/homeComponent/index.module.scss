@@ -1,0 +1,84 @@
+.homeWrapper {
+    @apply relative container mx-auto;
+    header {
+        @apply text-center;
+
+        h1 {
+            @apply font-bold text-xl;
+        }
+        p {
+            @apply uppercase bg-blue-500 p-4 font-bold text-white;
+        }
+    }
+
+    main {
+        @apply mt-6;
+
+        .search {
+            @apply relative;
+
+            input {
+                @apply border border-gray-300 p-2 pr-8 w-full rounded-sm outline-cyan-900 text-black;
+            }
+
+            .clearSearch {
+                @apply absolute flex justify-center items-center right-3 top-1 text-[1.3rem];
+            }
+        }
+
+        .tableWrapper {
+            @apply mt-3;
+
+            table {
+                @apply min-w-full table-auto bg-white;
+
+                thead {
+                    tr {
+                        @apply bg-gray-100 text-left text-sm uppercase;
+
+                        th {
+                            @apply p-4;
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        @apply border-t border-gray-200;
+
+                        td {
+                            @apply relative;
+                            &:not(:last-child) {
+                                @apply p-4;
+                            }
+
+                            .imageWrapper {
+                                @apply relative w-48 h-48;
+                            }
+
+                            img {
+                                @apply object-cover;
+                            }
+
+                            .title {
+                                @apply text-base font-bold;
+                            }
+
+                            .description {
+                                @apply text-gray-500;
+                            }
+
+                            &:last-child() {
+                                @apply p-4 text-lg font-bold text-left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pagination {
+            @apply mt-3 flex justify-center;
+        }
+    }
+}

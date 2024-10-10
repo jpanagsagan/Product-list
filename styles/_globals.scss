@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  @apply text-[12px] md:text-[14px] lg:text-[16px];
+}
+
+body {
+  @apply text-[12px] md:text-[14px] lg:text-[16px] min-h-screen p-8 pb-20;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
