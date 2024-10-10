@@ -5,16 +5,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  @apply text-[12px] md:text-[14px] lg:text-[16px];
 }
 
 body {
+  @apply text-[12px] md:text-[14px] lg:text-[16px] min-h-screen p-8 pb-20;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
