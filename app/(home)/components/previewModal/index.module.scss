@@ -1,5 +1,6 @@
 .modalWrapper {
   @apply absolute w-[90%] min-h-[35rem] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  bg-white  p-8 rounded-lg;
+
   box-shadow:
     rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px,

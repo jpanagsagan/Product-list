@@ -44,7 +44,7 @@
 
                 tbody {
                     tr {
-                        @apply border-t border-gray-200;
+                        @apply border-t border-gray-200 cursor-pointer;
 
                         td {
                             @apply relative;
